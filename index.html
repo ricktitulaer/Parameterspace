@@ -222,7 +222,7 @@
 
         }else if (_folderInfo.DE_PW.length>0){
             // if _folderInfo.DE_PW existed, just return.
-            studyEncodedUrl = document.location.origin + "/DesignExplorer/?ID=" + _folderInfo.DE_PW; 
+            studyEncodedUrl = document.location.origin + "/Parameterspace/?ID=" + _folderInfo.DE_PW; 
             d3.select("#showShortUrl").html("https://goo.gl/" +_folderInfo.DE_PW);
             d3.select("#myStudyID").html(studyEncodedUrl); 
             $("#showStillLink").modal();
@@ -231,7 +231,7 @@
         }
 
         //valid online folder available
-        var studyLongUrl = document.location.origin +"/DesignExplorer/?ID="+ studyCaseLink;
+        var studyLongUrl = document.location.origin +"/Parameterspace/?ID="+ studyCaseLink;
         d3.select("#welcome").style("display","none");
         
         
@@ -241,11 +241,11 @@
 
             if(UrlId.length ==6){ // google url id
                 
-                studyEncodedUrl = document.location.origin +"/DesignExplorer/?ID="+_folderInfo.DE_PW;
+                studyEncodedUrl = document.location.origin +"/Parameterspace/?ID="+_folderInfo.DE_PW;
                 d3.select("#showShortUrl").html("https://goo.gl/"+ _folderInfo.DE_PW);
 
             }else if(UrlId.startsWith("BL_")){
-                studyEncodedUrl = document.location.origin +"/DesignExplorer/?ID="+_folderInfo.DE_PW;
+                studyEncodedUrl = document.location.origin +"/Parameterspace/?ID="+_folderInfo.DE_PW;
                 d3.select("#showShortUrl").html("https://bit.ly/"+ _folderInfo.DE_PW.replace("BL_",""));
             }else{
                 studyEncodedUrl = studyLongUrl;
@@ -346,7 +346,7 @@
                                     <button id="stilllink" class="btn btn-default btn-xs" onclick="showStillLink()">My Static Link</button>
                                     <a class="btn btn-default btn-xs" href="http://www.mpendesign.com/category/tutorial/" target="_blank">Tutorial</a>
                                     <a class="btn btn-default btn-xs" href="https://www.thorntontomasetti.com/services/sustainability/" target="_blank">Services</a>
-                                    <a href="https://github.com/tt-acm/DesignExplorer/wiki" class="btn btn-default btn-xs" target="_blank">
+                                    <a href="https://github.com/tt-acm/Parameterspace/wiki" class="btn btn-default btn-xs" target="_blank">
                                         Info <span class="glyphicon glyphicon-new-window"></span>
                                     </a>
 
@@ -1741,7 +1741,7 @@
             // d3.select("#zoomed")
             //     .style("height", zoomedHeight)
             //     .append("img");
-            //.attr("src", "https://raw.githubusercontent.com/tt-acm/DesignExplorer/gh-pages/design_explorer_data/img/placeholder/placeholder.png?token=ACx89Xl7jGRusi88wWHKH97INGjRifH5ks5Vy6YGwA%3D%3D");
+            //.attr("src", "https://raw.githubusercontent.com/tt-acm/Parameterspace/gh-pages/design_explorer_data/img/placeholder/placeholder.png?token=ACx89Xl7jGRusi88wWHKH97INGjRifH5ks5Vy6YGwA%3D%3D");
         }
 
     </script>
