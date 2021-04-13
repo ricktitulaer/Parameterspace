@@ -133,6 +133,7 @@ function prepareGFolder(folderLink) {
         var imgFiles ={};
         var jsonFiles ={};
         var settingFiles ={};
+        console.log(folder.type)
 
         if (folder.type=== "GoogleDrive") { //this is google returned obj
             data.files.forEach(function (item) {
