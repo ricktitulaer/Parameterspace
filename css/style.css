@@ -303,6 +303,7 @@ g.cell text {
     position: absolute;
     right: 100px;
     text-align: right;
+    font-size: 20px;
     color: #E61E28;
 }
 
