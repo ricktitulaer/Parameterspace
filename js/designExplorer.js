@@ -127,6 +127,7 @@ function prepareGFolder(folderLink) {
     //_folderInfo = folderLink;
 
     folder = folderLink;
+    console.log(folder)
 
     d3.json(folder.url, function (data) {
         var csvFiles = {};
