@@ -301,8 +301,9 @@ g.cell text {
 
 #navbar-studyInfo{
     position: absolute;
-    right: 50px;
+    right: 100px;
     text-align: right;
+    color: #E61E28;
 }
 
 #vis .imgSwitch select{
